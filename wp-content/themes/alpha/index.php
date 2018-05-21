@@ -23,10 +23,10 @@
 <div class="posts" >
 
 
-<!--    --><?php //while (have_posts()){ the_post(); ?>
-    <!---->
-    <!---->
-    <!--    --><?php //} ?>
+<!--    <?php /*while (have_posts()){ the_post(); */?>
+
+
+    --><?php /*} */?>
 
     <?php while(have_posts()): the_post(); ?>
         <div class="post" <?php post_class(); ?>>
@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="post-title">
-                            <?php the_title(); ?>
+                            <a href="<?php the_permalink(); ?>">  <?php the_title(); ?></a>
                         </h2>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="col-md-4">
                         <p>
                             <strong><?php the_author(); ?></strong><br/>
-                            <?php the_date(); ?>
+                            <?php echo get_the_date("jS F, Y"); ?>
 
                         </p>
     <?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>"); ?>
@@ -59,12 +59,7 @@
                            }
                            ?>
                         </p>
-                        <?php
-                        if(is_single()){
-                            the_content();
-                        }else {
-	                        the_excerpt();
-                        }?>
+                        <?php the_excerpt() ?>
                     </div>
                 </div>
 
