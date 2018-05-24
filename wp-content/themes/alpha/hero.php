@@ -1,4 +1,4 @@
-<body <?php body_class(); ?>>
+
 <div class="header">
     <div class="container">
         <div class="row">

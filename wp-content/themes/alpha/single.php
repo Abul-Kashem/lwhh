@@ -26,7 +26,16 @@
                                         <p>
 											<?php
 											if ( has_post_thumbnail() ) {
+
+												/*
+												$thumbnail_url = get_the_post_thumbnail_url( null, "large" );
+												printf( '<a href="%s" data-featherlight="image">', $thumbnail_url );
 												the_post_thumbnail( "large", array( "class" => "img-fluid" ) );
+												echo '</a>';*/
+
+												echo( '<a href="#" class="popup" data-featherlight="image">' );
+												the_post_thumbnail( "large", array( "class" => "img-fluid" ) );
+												echo '</a>';
 											}
 
 											the_content();
@@ -41,13 +50,13 @@
                                     </div>
 
                                     <div class="col-md-4"></div>
-                                    <!-- <?php /*if(comments_open()) : */ ?>
-                    <div class="col-md-10 offset-md-1">
+									<?php if(comments_open()) :  ?>
+                                    <div class="col-md-10 offset-md-1">
 
-                        <?php /*comments_template(); */ ?>
+										<?php comments_template();  ?>
 
-                    </div>
-                    --><?php /*endif; */ ?>
+                                    </div>
+									<?php endif;  ?>
 
 
                                 </div>
