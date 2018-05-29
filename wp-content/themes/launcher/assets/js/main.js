@@ -94,10 +94,12 @@
 		// 	day: d.getDate()
 		// });
 
+		console.log(countdowndata);
+
         simplyCountdown('.simply-countdown-one', {
-            year: "2018",
-            month: "05",
-            day: "30"
+            year: countdowndata.year,
+            month: countdowndata.month,
+            day: countdowndata.day
         });
 
 	};

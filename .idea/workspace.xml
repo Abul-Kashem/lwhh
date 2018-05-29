@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1a9b96-7b9d-45c5-bac0-54f9abf2be53" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/about-page-template.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/page-templates/about-page-template.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/functions.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/hero-page.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/template-parts/about-page/hero-page.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/hero.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/template-parts/common/hero.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/index.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/page.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/alpha/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/alpha/single.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js" afterPath="$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/launcher/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/launcher/functions.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php" afterPath="$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +18,8 @@
       <file leaf-file-name="launcher.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
               <folding>
                 <element signature="e#7#60#0#PHP" expanded="true" />
               </folding>
@@ -32,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/index.php">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="299">
+              <caret line="99" column="36" lean-forward="false" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -45,8 +40,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="72">
+              <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -62,12 +57,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/test-template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="e#7#51#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,6 +84,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>WP_Object_Cache</find>
+      <find>simply-countdown-one</find>
     </findStrings>
     <dirStrings>
       <dir>C:\wamp64\www\lwhh</dir>
@@ -106,12 +114,13 @@
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/markup/js/main.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/launcher/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/launcher.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/launcher/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/launcher/test-template.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/launcher/functions.php" />
       </list>
     </option>
   </component>
@@ -171,6 +180,14 @@
               <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="launcher" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="lwhh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lwhh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="launcher" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="lwhh" type="b2602c69:ProjectViewProjectNode" />
@@ -247,12 +264,12 @@
       <workItem from="1527140012161" duration="6535000" />
       <workItem from="1527222344096" duration="411000" />
       <workItem from="1527235169839" duration="9175000" />
-      <workItem from="1527563027203" duration="39000" />
+      <workItem from="1527563027203" duration="4766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37642000" />
+    <option name="totallyTimeSpent" value="42369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -294,20 +311,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="86" column="18" lean-forward="false" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -512,6 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -519,6 +523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,6 +531,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,13 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="104" column="4" lean-forward="true" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -589,6 +588,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="453">
           <caret line="1293" column="9" lean-forward="false" selection-start-line="1293" selection-start-column="9" selection-end-line="1293" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,6 +620,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/markup/js/simplyCountdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="276" column="33" lean-forward="true" selection-start-line="276" selection-start-column="33" selection-end-line="276" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="99" column="36" lean-forward="false" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -628,36 +660,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/page-templates/launcher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="2" />
           <folding>
             <element signature="e#7#60#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/alpha/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/test-template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#7#51#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/launcher/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
