@@ -14,6 +14,8 @@ function alpha_theme_setup() {
 	add_theme_support( "title-tag" );
 	register_nav_menu( "topmenu", __( "Top Menu", "alpha" ) );
 	register_nav_menu( "footermenu", __( "Footer Menu", "alpha" ) );
+
+	add_theme_support("post-formats", array("audio", "gallery", "video", "image"));
 }
 
 add_action( 'after_setup_theme', 'alpha_theme_setup' );
@@ -21,6 +23,8 @@ add_action( 'after_setup_theme', 'alpha_theme_setup' );
 function alpha_assets() {
 	wp_enqueue_style( "bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", array(), '1.0' );
 	wp_enqueue_style( "featherlight", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css", array(), '1.0' );
+
+	wp_enqueue_style("dashicons");
 	wp_enqueue_style( "alpha", get_stylesheet_uri(), null, VERSION );
 
 
