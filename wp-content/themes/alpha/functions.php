@@ -1,9 +1,9 @@
 <?php
 
-if (site_url() == "http://localhost:85/lwhh"){
-	define("VERSION", microtime(true));
-}else{
-	define("VERSION", wp_get_theme()->get("Version"));
+if ( site_url() == "http://localhost:85/lwhh" ) {
+	define( "VERSION", microtime( true ) );
+} else {
+	define( "VERSION", wp_get_theme()->get( "Version" ) );
 }
 //echo VERSION;
 //die();
@@ -15,7 +15,30 @@ function alpha_theme_setup() {
 	register_nav_menu( "topmenu", __( "Top Menu", "alpha" ) );
 	register_nav_menu( "footermenu", __( "Footer Menu", "alpha" ) );
 
-	add_theme_support("post-formats", array("audio", "gallery", "video", "image"));
+	add_theme_support( "post-formats", array( "audio", "gallery", "video", "image" ) );
+
+	$alpha_custom_header_details = array(
+		'header-text'        => true,
+		'default-text-color' => '#222',
+		'width'              => "1300px",
+		'height'             => "1200px",
+		'flex-width'         => true,
+		'flex-height'        => true
+	);
+	add_theme_support( "custom-header", $alpha_custom_header_details );
+	$alpha_custom_logo_details = array(
+		"width"  => "100px",
+		"height" => "100px"
+	);
+	add_theme_support( "custom-logo", $alpha_custom_logo_details );
+
+	add_theme_support("custom-background");
+
+	add_image_size("alpha-square", 400, 400, true);
+	add_image_size("alpha-portrait", 400, 99999);
+	add_image_size("alpha-landscape", 99999, 400);
+	add_image_size("alpha-landscape-hard-crop", 600, 400, true);
+
 }
 
 add_action( 'after_setup_theme', 'alpha_theme_setup' );
@@ -24,12 +47,12 @@ function alpha_assets() {
 	wp_enqueue_style( "bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", array(), '1.0' );
 	wp_enqueue_style( "featherlight", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css", array(), '1.0' );
 
-	wp_enqueue_style("dashicons");
+	wp_enqueue_style( "dashicons" );
 	wp_enqueue_style( "alpha", get_stylesheet_uri(), null, VERSION );
 
 
 	wp_enqueue_script( "featherlight-js", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js", array( "jquery" ), "1.0.0", true );
-	wp_enqueue_script( "main-js", get_theme_file_uri() . "/assets/js/main.js", array( "jquery"), VERSION, true );
+	wp_enqueue_script( "main-js", get_theme_file_uri() . "/assets/js/main.js", array( "jquery" ), VERSION, true );
 }
 
 add_action( "wp_enqueue_scripts", "alpha_assets" );
@@ -101,21 +124,65 @@ function alpha_menu_item_classes( $classes, $item ) {
 
 add_filter( "nav_menu_css_class", "alpha_menu_item_classes", 10, 2 );
 
-function alpha_about_page_template_banner(){
-	if(is_page()){
+function alpha_about_page_template_banner() {
+	if ( is_page() ) {
 		$alpha_feat_image = get_the_post_thumbnail_url( null, "large" );
 		?>
-		<style>
-			/*my style here*/
-			.page-header{
-				background-image: url("<?php echo $alpha_feat_image; ?>");
-			}
-		</style>
+        <style>
+            /*my style here*/
+            .page-header {
+                background-image: url("<?php echo $alpha_feat_image; ?>");
+            }
+        </style>
 
 		<?php
 	}
 
 
+	if ( is_front_page() ) {
+		if ( current_theme_supports( "custom-header" ) ) {
+			?>
+            <style>
+                .header {
+                    background-image: url(<?php header_image();?>);
+                    background-size: cover;
+                    margin-bottom: 50px;
+                }
+
+                .header h1.heading a, h3.tagline {
+                    color: #<?php echo get_header_textcolor();?>;
+
+                <?php
+				if(!display_header_text()){
+					echo "display: none;";
+				}
+				?>
+                }
+
+            </style>
+			<?php
+		}
+	}
+
+
 }
 
-add_action("wp_head", "alpha_about_page_template_banner");
+add_action( "wp_head", "alpha_about_page_template_banner" );
+
+function alpha_body_class( $classes ) {
+	unset( $classes[ array_search( "single-format-standard", $classes ) ] );
+	$classes[] = "third-class";
+
+	return $classes;
+}
+
+add_filter( "body_class", "alpha_body_class" );
+
+function alpha_post_class( $classes ) {
+	unset( $classes[ array_search( "format-standard", $classes ) ] );
+	$classes[] = "post-class";
+
+	return $classes;
+}
+
+add_filter( "post_class", "alpha_post_class" );

@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<body <?php body_class(); ?>>
 <?php get_template_part( "/template-parts/common/hero" ); ?>
 	<div class="posts">
 
