@@ -65,6 +65,8 @@ define('NONCE_SALT',       'ldGm;l{6a=?nU#vV#S_W(n+/z-UpxlB~l1mGz>LuLpz3_]VX;)Ko
  */
 $table_prefix  = 'lwhh_';
 
+define('ACF_EARLY_ACCESS', '5');
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -77,7 +79,7 @@ $table_prefix  = 'lwhh_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
 

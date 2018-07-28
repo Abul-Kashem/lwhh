@@ -1,5 +1,10 @@
 <?php
 
+if ( class_exists( 'Attachments' ) ) {
+	require_once "lib/attachments.php";
+}
+
+
 if ( site_url() == "http://localhost:85/lwhh" ) {
 	define( "VERSION", microtime( true ) );
 } else {
@@ -32,12 +37,13 @@ function alpha_theme_setup() {
 	);
 	add_theme_support( "custom-logo", $alpha_custom_logo_details );
 
-	add_theme_support("custom-background");
+	add_theme_support( "custom-background" );
+	add_theme_support( 'html5', array( 'search-form' ) );
 
-	add_image_size("alpha-square", 400, 400, true);
-	add_image_size("alpha-portrait", 400, 99999);
-	add_image_size("alpha-landscape", 99999, 400);
-	add_image_size("alpha-landscape-hard-crop", 600, 400, true);
+	add_image_size( "alpha-square", 400, 400, true );
+	add_image_size( "alpha-portrait", 400, 99999 );
+	add_image_size( "alpha-landscape", 99999, 400 );
+	add_image_size( "alpha-landscape-hard-crop", 600, 400, true );
 
 }
 
@@ -48,10 +54,12 @@ function alpha_assets() {
 	wp_enqueue_style( "featherlight", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css", array(), '1.0' );
 
 	wp_enqueue_style( "dashicons" );
+	wp_enqueue_style( "tinyslider", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.7.1/tiny-slider.css" );
 	wp_enqueue_style( "alpha", get_stylesheet_uri(), null, VERSION );
 
 
 	wp_enqueue_script( "featherlight-js", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js", array( "jquery" ), "1.0.0", true );
+	wp_enqueue_script( "tinyslider-js", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.7.1/min/tiny-slider.js", null, "1.0.0", true );
 	wp_enqueue_script( "main-js", get_theme_file_uri() . "/assets/js/main.js", array( "jquery" ), VERSION, true );
 }
 
@@ -186,3 +194,24 @@ function alpha_post_class( $classes ) {
 }
 
 add_filter( "post_class", "alpha_post_class" );
+
+
+function alpha_highlight_search_results( $text ) {
+
+
+	if ( is_search() ) {
+		$keys = implode( '|', explode( ' ', get_search_query() ) );
+		$text = preg_replace( '/(' . $keys . ')/iu', '<span class="search-highlight">\0</span>', $text );
+	}
+
+	return $text;
+
+}
+
+add_filter( 'the_content', 'alpha_highlight_search_results' );
+add_filter( 'the_excerpt', 'alpha_highlight_search_results' );
+add_filter( 'the_title', 'alpha_highlight_search_results' );
+
+
+
+
